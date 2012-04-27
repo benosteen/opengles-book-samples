@@ -61,7 +61,7 @@ int Init ( ESContext *esContext )
    userData->colorLoc = glGetUniformLocation ( userData->programObject, "u_color" );
 
    // Set the clear color
-   glClearColor ( 0.0f, 0.0f, 0.0f, 0.0f );
+   glClearColor ( 0.0f, 0.0f, 0.0f, 1.0f );
    
    // Set the stencil clear value
    glClearStencil ( 0x1 );

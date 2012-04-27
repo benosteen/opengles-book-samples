@@ -136,7 +136,7 @@ int Init ( ESContext *esContext )
    userData->colorLoc = glGetUniformLocation ( userData->programObject, "u_color" );
    userData->samplerLoc = glGetUniformLocation ( userData->programObject, "s_texture" );
 
-   glClearColor ( 0.0f, 0.0f, 0.0f, 0.0f );
+   glClearColor ( 0.0f, 0.0f, 0.0f, 1.0f );
 
    // Fill in particle data array
    srand ( 0 );

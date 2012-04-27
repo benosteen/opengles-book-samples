@@ -117,7 +117,7 @@ int Init ( ESContext *esContext )
    if ( userData->baseMapTexId == 0 || userData->lightMapTexId == 0 )
       return FALSE;
 
-   glClearColor ( 0.0f, 0.0f, 0.0f, 0.0f );
+   glClearColor ( 0.0f, 0.0f, 0.0f, 1.0f );
    return TRUE;
 }
 

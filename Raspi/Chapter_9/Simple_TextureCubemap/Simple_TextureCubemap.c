@@ -143,7 +143,7 @@ int Init ( ESContext *esContext )
    userData->numIndices = esGenSphere ( 20, 0.75f, &userData->vertices, &userData->normals,
                                         NULL, &userData->indices );
 
-   glClearColor ( 0.0f, 0.0f, 0.0f, 0.0f );
+   glClearColor ( 0.0f, 0.0f, 0.0f, 1.0f );
    return GL_TRUE;
 }
 
