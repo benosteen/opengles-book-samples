@@ -1,6 +1,10 @@
 # Straight forward Makefile to compile all examples in a row
 
-INCDIR=-I./Common -I/opt/vc/include
+# If cross-compiling, you may wish to set the following environment variable to the root location of 
+# your 'sdk'
+# SDKSTAGE=/home/foo/raspberrypi
+
+INCDIR=-I./Common -I$(SDKSTAGE)/opt/vc/include
 LIBS=-lGLESv2 -lEGL -lm -lbcm_host -L$(SDKSTAGE)/opt/vc/lib
 
 CFLAGS+=-DRPI_NO_X
