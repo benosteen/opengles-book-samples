@@ -143,16 +143,17 @@ EGLBoolean WinCreate(ESContext *esContext, const char *title)
 
    int display_width;
    int display_height;
-   // You can hardcode the resolution here:
-   //int display_width = 640;
-   //int display_height = 480;
 
    // create an EGL window surface, passing context width/height
    success = graphics_get_display_size(0 /* LCD */, &display_width, &display_height);
    if ( success < 0 )
    {
       return EGL_FALSE;
-   }   
+   }
+   
+   // You can hardcode the resolution here:
+   display_width = 640;
+   display_height = 480;
 
    dst_rect.x = 0;
    dst_rect.y = 0;
