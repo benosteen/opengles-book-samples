@@ -4,7 +4,7 @@
 # your 'sdk'
 # SDKSTAGE=/home/foo/raspberrypi
 
-INCDIR=-I./Common -I$(SDKSTAGE)/opt/vc/include
+INCDIR=-I./Common -I$(SDKSTAGE)/opt/vc/include -I$(SDKSTAGE)/opt/vc/include/interface/vcos/pthreads
 LIBS=-lGLESv2 -lEGL -lm -lbcm_host -L$(SDKSTAGE)/opt/vc/lib
 
 CFLAGS+=-DRPI_NO_X
