@@ -29,7 +29,7 @@ typedef struct
    
    // Vertex daata
    GLfloat  *vertices;
-   GLuint *indices;
+   GLubyte *indices;
    int       numIndices;
 
    // Rotation angle
@@ -147,7 +147,7 @@ void Draw ( ESContext *esContext )
    glUniformMatrix4fv( userData->mvpLoc, 1, GL_FALSE, (GLfloat*) &userData->mvpMatrix.m[0][0] );
    
    // Draw the cube
-   glDrawElements ( GL_TRIANGLES, userData->numIndices, GL_UNSIGNED_INT, userData->indices );
+   glDrawElements ( GL_TRIANGLES, userData->numIndices, GL_UNSIGNED_BYTE, userData->indices );
 }
 
 ///
