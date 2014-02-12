@@ -172,8 +172,6 @@ void Draw ( ESContext *esContext )
    glUniform1i ( userData->lightMapLoc, 1 );
 
    glDrawElements ( GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, indices );
-
-   eglSwapBuffers ( esContext->eglDisplay, esContext->eglSurface );
 }
 
 ///

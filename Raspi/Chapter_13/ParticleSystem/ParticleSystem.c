@@ -253,8 +253,6 @@ void Draw ( ESContext *esContext )
    glUniform1i ( userData->samplerLoc, 0 );
 
    glDrawArrays( GL_POINTS, 0, NUM_PARTICLES );
-   
-   eglSwapBuffers ( esContext->eglDisplay, esContext->eglSurface );
 }
 
 ///

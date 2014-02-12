@@ -173,8 +173,6 @@ void Draw ( UserData *userData )
    glEnableVertexAttribArray ( 0 );
 
    glDrawArrays ( GL_TRIANGLES, 0, 3 );
-
-   eglSwapBuffers ( userData->eglDisplay, userData->eglSurface );
 }
 
 
